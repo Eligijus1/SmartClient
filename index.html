@@ -12,6 +12,7 @@
 
     <!-- DS: -->
     <SCRIPT SRC=ds/animalDs.js></SCRIPT>
+    <SCRIPT SRC=ds/worldDs.js></SCRIPT>
 </HEAD>
 <BODY CLASS="pageBackground">
 <SCRIPT>
@@ -46,6 +47,21 @@
         sortFieldNum: 2,
         canReorderRecords: true,
         left: 50,
+        top: 75,
+        width: 500,
+        height: 300,
+        alternateRecordStyles: true,
+        showFilterEditor: true,
+        filterOnKeypress: true,
+        autoFetchData: true
+    });
+
+    ListGrid.create({
+        ID: "worldList",
+        dataSource: 'worldDs',
+        sortFieldNum: 2,
+        canReorderRecords: true,
+        left: 600,
         top: 75,
         width: 500,
         height: 300,
