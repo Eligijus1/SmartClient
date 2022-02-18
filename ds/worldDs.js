@@ -1,7 +1,7 @@
 isc.DataSource.create({
     ID: "worldDs",
     dataFormat: "json",
-    dataURL: "ds/data/worldData.json",
+    dataURL: dataUrlPrefix + "ds/data/worldData.json",
     fields: [
         {name: "pk", type: "sequence", hidden: true, title: "pk", primaryKey: "true"},
         {name: "countryCode", type: "text", title: "Code", required: true},
