@@ -1,7 +1,7 @@
 let animalDs = isc.DataSource.create({
     ID: "animalDs",
     dataFormat: "json",
-    dataURL: "/ds/data/animalData.json",
+    dataURL: "ds/data/animalData.json",
     fields: [
         {name: "commonName", hidden: true, title: "Animal"},
         {name: "scientificName", title: "Scientific Name"},
